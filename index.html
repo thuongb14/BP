@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Weight, Cost, and Price Calculator</title>
+  </head>
+  <body>
+    <h1>Book Weight, Cost, and Price Calculator</h1>
+    <form id="bookForm">
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="15x20cm">15x20cm</option>
+        <option value="15x24cm">15x24cm</option>
+        <option value="16x24cm">16x24cm</option>
+        <option value="15.5x24cm">15.5x24cm</option></select
+      ><br /><br />
+      <label for="pages">Number of Pages:</label>
+      <input type="number" id="pages" name="pages" /><br /><br />
+      <label for="vndCost">VND cost:</label>
+      <input type="number" id="vndCost" name="vndCost" /><br /><br />
+      <label for="conversionRate">Conversion rate:</label>
+      <input
+        type="number"
+        id="conversionRate"
+        name="conversionRate"
+        value="15000"
+      /><br /><br />
+      <label for="margin">Margin (%):</label>
+      <input type="number" id="margin" name="margin" value="51" /><br /><br />
+      <input
+        type="button"
+        value="Calculate Weight, Cost, and Price"
+        onclick="calculateAll()"
+      />
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
