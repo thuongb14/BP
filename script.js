@@ -27,13 +27,13 @@ function calculateAll() {
     const sellingPrice = totalPrice / (1 - margin / 100);
     document.getElementById(
       "result"
-    ).innerHTML = `The estimated weight of the book is ${totalWeight.toFixed(
+    ).innerHTML = `<p>The estimated weight of the book is <span>${totalWeight.toFixed(
       2
-    )} kg. The cost price is ${totalPrice.toFixed(
+    )} kg.</span></p> <p>The cost price is <span>${totalPrice.toFixed(
       2
-    )} AUD. The selling price with a ${margin.toFixed(
+    )} AUD.<span></p> <p>The selling price with a ${margin.toFixed(
       2
-    )}% margin is: ${sellingPrice.toFixed(2)} AUD.`;
+    )}% margin is: <span>${sellingPrice.toFixed(2)} AUD.</span> </p>`;
   } else {
     document.getElementById("result").innerHTML =
       "Invalid input. Please enter valid values.";
