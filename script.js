@@ -23,7 +23,7 @@ function calculateAll() {
   ) {
     const weightPer100 = weightPer100Pages[size];
     const totalWeight = (pages / 100) * weightPer100;
-    const totalPrice = totalWeight * 10 + vndCost / conversionRate;
+    const totalPrice = totalWeight * 12 + vndCost / conversionRate;
     const sellingPrice = totalPrice / (1 - margin / 100);
     document.getElementById(
       "result"
